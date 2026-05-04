@@ -30,7 +30,7 @@ Additional evaluation scripts:
 - `experiments/evaluate_proprietary_baseline.py` — baseline no injection transfer
 
 
-The full conda environment specification is provided in `generate_autodan_attack/torch26_llm_attack.yaml`. Key dependencies:
+Key dependencies:
 
 - Python 3.11
 - PyTorch 2.7.1 (CUDA 11.8)

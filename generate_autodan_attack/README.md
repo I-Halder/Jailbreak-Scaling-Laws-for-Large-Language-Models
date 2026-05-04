@@ -1,9 +1,15 @@
 ### Setup
 
-```bash
-conda env create -f torch26_llm_attack.yaml
-conda activate torch26_llm_attack
-```
+Key environment dependencies: 
+
+- Python 3.11
+- PyTorch 2.7.1 (CUDA 11.8)
+- `transformers==4.28.1`
+- `accelerate`, `peft`, `datasets`
+- `fschat==0.2.20` (FastChat, for conversation templates)
+- `openai`, `anthropic` (for proprietary model API calls)
+- `vllm` (for efficient batched inference)
+- `matplotlib`, `numpy`, `scipy`
 
 ### Running the Attack
 

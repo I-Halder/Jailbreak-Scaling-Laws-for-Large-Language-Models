@@ -90,7 +90,7 @@ python generate_score_victim_response/compute_asr_vs_k_autodan.py \
     --tasks advbench_high_level_injection \
     --yaml_path "./lm_eval/tasks/advbench/advbench_high_level_injection.yaml" \
     --use_judge_model --limit 0.01 \
-    --jailbreak_file "vicuna_0_advbench.json" \
+    --jailbreak_file "./generate_score_victim_response/vicuna_0_advbench.json" \
     --jailbreak_prompt_field "goal" \
     --jailbreak_attack_field "final_suffix"
 ```
@@ -118,7 +118,7 @@ python generate_score_victim_response/compute_asr_vs_k_autodan_api.py \
     --tasks advbench_high_level_injection \
     --yaml_path "./lm_eval/tasks/advbench/advbench_high_level_injection.yaml" \
     --use_judge_model --limit 0.01 \
-    --jailbreak_file "vicuna_0_advbench.json" \
+    --jailbreak_file "./generate_score_victim_response/vicuna_0_advbench.json" \
     --jailbreak_prompt_field "goal" \
     --jailbreak_attack_field "final_suffix"
 ```
@@ -175,14 +175,6 @@ lm_eval/tasks/harmbench_standard/
 ```
 
 These YAML configs are referenced by the `--yaml_path` argument in the generation/scoring scripts.
-
----
-
-Each subdirectory contains Python scripts that produce publication-ready figures. A cross-model category-wise plot script is at the top level:
-
-```bash
-python plot_jailbreak_results/plot_asr_categorywise.py
-```
 
 ---
 
