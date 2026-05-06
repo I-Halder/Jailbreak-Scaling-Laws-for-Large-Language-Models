@@ -572,7 +572,7 @@ def main() -> None:
             
             # Modify YAML
             task_base = task_name_override or args.tasks
-            task_name = modify_yaml_repeats(args.yaml_path, k, run_num=run_number, task_name=task_base, victim_model_name=victim_model_name, judge_model_name=judge_model_name)
+            task_name = modify_yaml_repeats(yaml_path, k, run_num=run_number, task_name=task_base, victim_model_name=victim_model_name, judge_model_name=judge_model_name)
             
             # Run lm_eval
             k_output_path = f"{output_path_name}/k{k}_task_{task_name}"
